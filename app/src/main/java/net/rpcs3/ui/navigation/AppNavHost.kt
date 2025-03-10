@@ -13,7 +13,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.foundation.layout.systemBars
+import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Menu
@@ -214,7 +214,7 @@ fun AppNavHost() {
             }
         ) {
             Scaffold(
-                modifier = Modifier.windowInsetsPadding(WindowInsets.systemBars),
+                modifier = Modifier.windowInsetsPadding(WindowInsets.navigationBars),
                 topBar = {
                     CenterAlignedTopAppBar(
                         colors = TopAppBarDefaults.topAppBarColors(
