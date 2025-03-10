@@ -15,7 +15,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AppNavHost()
+            RPCS3Theme {
+                AppNavHost()
+            }
         }
 
         RPCS3.rootDirectory = applicationContext.getExternalFilesDir(null).toString()
